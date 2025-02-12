@@ -1,0 +1,26 @@
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+
+    & li {
+        margin: 10px 20px;
+    }
+
+    & li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    & li a img {
+
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-color: gray;
+        border-radius: 50%
+    }
+}
