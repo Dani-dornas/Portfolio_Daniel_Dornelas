@@ -85,6 +85,7 @@ video {
 header {
   background-color: #3F0042;
   padding: 0vw 3vw;
+  border-bottom: 2px solid white;
 }
 
 img {

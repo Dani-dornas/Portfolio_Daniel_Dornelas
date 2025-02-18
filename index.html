@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/button.css" />
-    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/contact.css">
   </head>
   <body>
     <header>
@@ -32,55 +33,59 @@
       </nav>
     </header>
 
-    <!-- ABOUT ME SESSION -->
+    <main>
+      <!-- ABOUT ME SESSION -->
 
-    <div class="session1">
-      <h1>Sobre</h1>
-      <div>Linha do tempo</div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis minima
-        nemo magni omnis ad ipsum recusandae eaque consectetur ratione iusto at
-        sit, nulla libero totam eius, tempore dolore expedita aspernatur!
-      </p>
-    </div>
+      <div class="session1">
+        <h1>Sobre</h1>
+      </div>
 
-    <!-- PROJECTS SESSION -->
-    <div class="session2">
-      <h1>Projetos</h1>
-      <ul id="projects">
-        <li>
-          <a href="">
-            <img src="" alt="My Portfolio" />
-          </a>
-        </li>
+      <!-- PROJECTS SESSION -->
+      <div class="session2">
+        <h1>Projetos</h1>
+        <ul id="projects">
+          <li>
+            <!-- noopener: Impede que a nova aba acesse window.opener, evitando possíveis ataques. noreferrer: Evita que a nova página veja a URL de origem. -->
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="./img/Eu.png" alt="My Portfolio" />
+            </a>
+          </li>
 
-        <li>
-          <a href="">
-            <img src="" alt="BikePass" />
-          </a>
-        </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="./img/bikepass.png" alt="BikePass" />
+            </a>
+          </li>
 
-        <li>
-          <a href="">
-            <img src="" alt="Learn Scrum" />
-          </a>
-        </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="./img/perrydevslogo.png" alt="Learn Scrum" />
+            </a>
+          </li>
 
-        <li>
-          <a href="">
-            <img src="" alt="DnD Sheet" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    
-    <!-- SKILLS SESSION -->
-    <div class="session1"></div>
-    
-    <!-- TIMELINE SESSION -->
-    <div class="session1"></div>
-    
-    <!-- CONTACT SESSION -->
-    <div class="session2"></div>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="./img/logonutriperry.png" alt="Nutri Perry" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CONTACT SESSION -->
+      <div class="session1">
+        <h1>Contatos</h1>
+        <form action="" id="contactform">
+          <input type="text" placeholder="Nome" />
+          <input type="text" placeholder="Email" />
+          <textarea placeholder="Mensagem" ></textarea>
+          <button>Enviar</button>
+        </form>
+        <ul id="socialmedia">
+          <li><a href="#"><img src="./img/twitter-icon.png" alt="twitter"></a></li>
+          <li><a href="#"><img src="./img/discord-icon.png" alt="discord"></a></li>
+          <li><a href="#"><img src="./img/youtube-icon.png" alt="youtube"></a></li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
