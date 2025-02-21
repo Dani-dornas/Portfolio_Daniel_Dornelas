@@ -9,10 +9,12 @@ header {
     align-items: center;
     flex-wrap: wrap;
     padding: 15px 30px;
+
 }
 
 nav {
     display: flex;
+    flex-wrap: wrap;
 
     & #navlist {
         display: flex;

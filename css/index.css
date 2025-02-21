@@ -78,7 +78,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -113,4 +112,24 @@ li::before {
 .session2 {
   background-color: #3F0042;
   padding: 1vw 0vw;
+}
+
+html {
+  height: 100%;
+
+  & body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      & section {
+        flex-grow: 1;
+      }
+    }
+  }
 }
