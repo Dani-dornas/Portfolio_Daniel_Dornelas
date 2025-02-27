@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/button.css" />
     <link rel="stylesheet" href="./css/projects.css" />
     <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
     <header>
@@ -18,76 +18,71 @@
       <nav>
         <ul id="navlist">
           <li>
-            <a href="#Skills">Skills</a>
+            <a href="#about_session">Sobre</a>
           </li>
           <li>
-            <a href="#Projects">Projetos</a>
+            <a href="#projects_session">Projetos</a>
           </li>
           <li>
-            <a href="#About">Sobre</a>
-          </li>
-          <li>
-            <a href="#Contact">Contato</a>
+            <a href="#contact_session">Contato</a>
           </li>
         </ul>
-        <button class="button">Download CV</button>
+        <a class="button" href="https://docs.google.com/document/d/1iHs1XXWpOZ4v9grkUprx2q9rJL69AEwArqoI8XstjDs/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a>
       </nav>
     </header>
 
     <main>
       <!-- ABOUT ME SESSION -->
 
-      <section class="session1">
+      <section class="session1" id="about_session">
         <h1>Sobre mim</h1>
         <div id="aboutme">
-          <img src="./img/Eu2.png" alt="Daniel Dornelas">
+          <img src="./img/Eu2.png" alt="Daniel Dornelas" />
           <p>
             Sou um desenvolvedor Full Stack com experiência na criação de
             aplicações web e APIs escaláveis. Possuo formação em Análise e
-            Desenvolvimento de Sistemas pela FATEC e atuei em projetos freelance e
-            suporte técnico, adquirindo habilidades em desenvolvimento de software
-            e infraestrutura de TI. Minha experiência inclui a criação de
-            interfaces responsivas com React e TypeScript, desenvolvimento de APIs
-            em Node.js, modelagem de bancos de dados (MongoDB e PostgreSQL) e
-            testes automatizados com Jest. Além disso, tenho conhecimento em
+            Desenvolvimento de Sistemas pela FATEC e atuei em projetos freelance
+            e suporte técnico, adquirindo habilidades em desenvolvimento de
+            software e infraestrutura de TI. Minha experiência inclui a criação
+            de interfaces responsivas com React e TypeScript, desenvolvimento de
+            APIs em Node.js, modelagem de bancos de dados (MongoDB e PostgreSQL)
+            e testes automatizados com Jest. Além disso, tenho conhecimento em
             metodologias ágeis (Scrum e Kanban) e controle de versão com Git e
             GitHub. Busco sempre aprimorar minhas habilidades e contribuir para
             soluções inovadoras e eficientes.
           </p>
         </div>
-        
-        
       </section>
 
       <!-- PROJECTS SESSION -->
-      <section class="session2">
-        <h1>Projetos</h1>
+      <section class="session2" id="projects_session">
+        <h1>Projetos e habilidades</h1>
         <ul id="projects">
           <li>
             <!-- noopener: Impede que a nova aba acesse window.opener, evitando possíveis ataques. noreferrer: Evita que a nova página veja a URL de origem. -->
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://dani-dornas.github.io/Portfolio_Daniel_Dornelas/" target="_blank" rel="noopener noreferrer">
               <img src="./img/Eu.png" alt="My Portfolio" />
             </a>
           </li>
 
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ThePerryDev/bikepass-documentation" target="_blank" rel="noopener noreferrer">
               <img src="./img/bikepass.png" alt="BikePass" />
             </a>
           </li>
 
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ThePerryDev/docs" target="_blank" rel="noopener noreferrer">
               <img src="./img/perrydevslogo.png" alt="Learn Scrum" />
             </a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ThePerryDev/visiona-documentation" target="_blank" rel="noopener noreferrer">
               <img src="./img/visiona.png" alt="Visiona" />
             </a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ThePerryDev/NutriPerry" target="_blank" rel="noopener noreferrer">
               <img src="./img/logonutriperry.png" alt="Nutri Perry" />
             </a>
           </li>
@@ -95,7 +90,7 @@
       </section>
 
       <!-- CONTACT SESSION -->
-      <section class="session1">
+      <section class="session1" id="contact_session">
         <h1>Contato</h1>
         <form action="" id="contactform">
           <input type="text" placeholder="Nome" />

@@ -67,5 +67,11 @@
         border-radius: 8px;
         border: 2px solid black;
         padding: 2px;
+        transition: 100ms ease-in-out; /* Suaviza a transição do efeito */
     }
+}
+
+#socialmedia li a img:hover {
+    border: 3px solid #3aff00; 
+    box-shadow: 0 0 8px #3aff00, 0 0 20px #3aff00, 0 0 30px #3aff00;
 }
