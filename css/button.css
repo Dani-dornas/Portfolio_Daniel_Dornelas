@@ -9,7 +9,6 @@
     font-size: large;
     transition: border 50ms linear;
     transition: transform 50ms linear;
-    margin-left: 20px;
 
     &:hover {
         cursor: pointer;

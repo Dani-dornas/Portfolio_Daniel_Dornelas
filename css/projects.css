@@ -4,21 +4,27 @@
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+    padding: 0;
+    gap: 80px;
+}
 
-    & li {
-        margin: 10px 20px;
-    }
+#projects li a {
+    color: white;
+    text-decoration: none;
+}
 
-    & li a {
-        color: white;
-        text-decoration: none;
-    }
+/* Estilização das imagens */
+#projects li a img {
+    display: block;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out; /* Suaviza a transição */
+}
 
-    & li a img {
-
-        display: block;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-    }
+/* Efeito de borda neon suave ao passar o mouse */
+#projects li a img:hover {
+    border: 3px solid #3aff00; 
+    box-shadow: 0 0 8px #3aff00, 0 0 20px #3aff00, 0 0 30px #3aff00;
+    transform: scale(1.3);
 }
