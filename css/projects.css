@@ -1,30 +1,51 @@
 #projects {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     list-style: none;
-    padding: 0;
-    gap: 80px;
+    gap: 70px;
+
+    & li {
+        text-align: center;
+        border-radius: 30px;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        transition: box-shadow 200ms linear, transform 100ms linear;
+    }
+
+    & p {
+        color: white;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    & img {
+        width: 150px;
+        height: 150px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+    }
+
+    & .button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: fit-content;
+    }
 }
 
-#projects li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Estilização das imagens */
-#projects li a img {
-    display: block;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    transition: 0.3s ease-in-out; /* Suaviza a transição */
-}
-
-/* Efeito de borda neon suave ao passar o mouse */
-#projects li a img:hover {
-    border: 3px solid #3aff00; 
+/* Efeito de borda neon e destaque ao passar o mouse */
+#projects li:hover {
+    transform: scale(1.1);
+    border: 3px solid #3aff00;
     box-shadow: 0 0 8px #3aff00, 0 0 20px #3aff00, 0 0 30px #3aff00;
-    transform: scale(1.3);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    #projects {
+        flex-direction: column;
+        justify-content: center;
+    }
 }

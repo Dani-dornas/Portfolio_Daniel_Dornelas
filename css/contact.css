@@ -73,5 +73,5 @@
 
 #socialmedia li a img:hover {
     border: 3px solid #3aff00; 
-    box-shadow: 0 0 8px #3aff00, 0 0 20px #3aff00, 0 0 30px #3aff00;
+    box-shadow: 0 0 4px #3aff00, 0 0 10px #3aff00, 0 0 15px #3aff00;
 }

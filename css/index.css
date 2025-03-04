@@ -133,3 +133,26 @@ html {
     }
   }
 }
+
+/* Barra de rolagem */
+
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #3F0042; /* Cor do fundo da barra */
+}
+
+/* Cor da "pegada" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #3aff00; /* Cor com efeito gradiente */
+  border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Efeito ao passar o mouse na barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff00 /* Muda a cor ao passar o mouse */
+}
