@@ -94,6 +94,14 @@ img {
 h1 {
   color: white;
   text-align: center;
+  font-size: xx-large;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
 }
 
 li::before {
@@ -102,7 +110,7 @@ li::before {
 
 .session1 {
   background-color: #88008F;
-  padding: 1vw 20vw;
+  padding: 2vw 20vw;
 
   & p {
     color: white;
@@ -111,10 +119,11 @@ li::before {
 
 .session2 {
   background-color: #3F0042;
-  padding: 1vw 20vw;
+  padding: 2vw 20vw;
 }
 
 html {
+  scroll-behavior: smooth;
   height: 100%;
 
   & body {

@@ -1,6 +1,6 @@
 .button {
     text-decoration: none;
-    display: inline;
+    display: block;
     background-color: #3a8c00;
     border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 8px;
@@ -8,7 +8,6 @@
     color: white;
     box-shadow: 5px 5px black;
     font-size: large;
-    transition: border 50ms linear;
     transition: transform 50ms linear;
 
     &:hover {
