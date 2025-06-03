@@ -1,19 +1,34 @@
-// Aguarda até que a página carregue completamente
+function showSubsection(id) {
+  const sections = document.querySelectorAll('.project-subsection');
+  sections.forEach(section => section.classList.remove('active'));
+
+  const activeSection = document.getElementById(id);
+  if (activeSection) {
+    activeSection.classList.add('active');
+  }
+
+  // Atualiza os botões
+  const buttons = document.querySelectorAll('#project-tabs button');
+  buttons.forEach(button => {
+    if (button.getAttribute('data-target') === id) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+}
+
+// Espera o DOM estar carregado antes de ativar eventos
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleciona a imagem pelo nome da classe
-    const imgElement = document.querySelector(".project_img");
+  const buttons = document.querySelectorAll('#project-tabs button');
 
-    // Define os caminhos das imagens
-    const originalSrc = "./img/logonutriperry.png";  // Caminho da imagem original
-    const hoverSrc = "./img/NutriPerryScreen.JPG";        // Caminho da imagem ao passar o mouse
-
-    // Adiciona um evento para mudar a imagem quando o mouse passa por cima
-    imgElement.addEventListener("mouseenter", function () {
-        imgElement.src = hoverSrc;
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      const target = this.getAttribute('data-target');
+      showSubsection(target);
     });
+  });
 
-    // Adiciona um evento para restaurar a imagem original quando o mouse sai
-    imgElement.addEventListener("mouseleave", function () {
-        imgElement.src = originalSrc;
-    });
+  // Inicializa com seção acadêmica
+  showSubsection('academic');
 });
